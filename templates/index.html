@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block main_content %}
+{% block title %}
+{% endblock %}
+<div class="ms-5 mt-5">
+    <section>
+        <h1>¿De que se trata?</h1>
+        <article class="ms-4 fs-5">
+            El funcionamiento de esta distribucion es un poco distante al de las distribuciones que conocemos hoy en día, esto debido a que esta pensada para hacer pruebas.<br>
+            Seria algo asi como un Plug and Play, tan solo usa un software para flashear la ISO, o usa VirtualBox, para mas informacion visita la <a href="{{ url_for ('docs')}}">documentación</a>.
+        </article>
+    </section>
+</div>
+{% endblock %}

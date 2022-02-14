@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raxabi, elultimoviejuno, Beltran Diaz">
+    <meta name="description" content="Official Website of RArchxbi Arch Linux based Distribution">
+    <meta name="keywords" content="Linux, Arch Distro, Arch Linux Distro, Distribution, Python, Flask, Flask Server, programming">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome/css/all.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-4">
+        <div class="container-fluid">
+            <ul class="navbar-nav ms-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('docs') }}" role="button" aria-expanded="false" data-bs-toggle="dropdown">Documentación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('downloads') }}" role="button" aria-expanded="false" data-bs-toggle="dropdown">Descargas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/Raxabi"><i id="github-white" class="fab fa-github fa-2x ms-3 mt-1"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="presetation-title" class="mt-5 text-center">
+        <h1>RArchxbi</h1>
+        <h4 class="mt-4">Una distribucion basada en Arch Linux ligera, simple e ideal para hacer testing.</h4>
+    </div>
+    {% block title %}
+    {% endblock %}
+    {% block main_content %}
+    {% endblock %}
+    <footer>
+
+    </footer>
+</body>
+</html>
